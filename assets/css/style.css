@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+   
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+}
+#header .search-icon{
+    color: blanchedalmond;
+    font-size: 20px;
+    line-height: 46px;
+}
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+
+
+#header .search-btn:hover {
+    background-color: brown;
+}
+#nav {
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none ;
+}
+#nav .subnav li:hover a, #nav > li:hover > a{
+    color: blanchedalmond;
+    background-color: rgb(14, 10, 19);
+}
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav {
+    color: blanchedalmond;
+}
+
+#nav li{
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+#nav > li{
+    display: inline-block;
+}
+#nav .subnav{
+    position: absolute;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px black;
+    display: none;
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+}
+#nav > li > a{
+    color: cornsilk;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    line-height: 46px;
+    padding: 0px 24px;
+    text-decoration: none;
+    display: block;
+
+}
+#nav li:hover a{
+    color: black;
+    background-color: rgb(211, 204, 204);
+    display: inline-block;
+    width:  100%;
+}
+#nav .ti-angle-down{
+    font-size: 14px;
+}
+#slider {
+    background-color: rgb(90, 86, 86);
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/css/img/248686240_1018181962370104_4544918975449743441_n.jpg') top center / cover no-repeat;
+    position: relative;
+}
+#slider .text-content {
+    position: absolute;
+    color: aliceblue;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; }
+#slider .text-heading {
+    font-weight: 500;
+}
+
+#slider .text-description {
+
+    }
+
+
+#content {
+
+}
+#content .content-section{
+    width: auto;
+    margin-left: auto;
+    margin-top: auto;
+    padding: 64px 30px;
+}
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+    opacity: 0.6;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+}
+.tour-section{
+    background-color: black;
+    color: blanchedalmond;
+    height: 1200px;
+}
+.tickets-list{
+    background-color: blanchedalmond;
+    color: black;
+    margin-top: 40px;
+}
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid;
+    opacity: 0.7;
+}
+.tickets-list .sold-out{
+    background-color: rgb(182, 26, 26);
+    color: burlywood;
+    margin-left: 12px;
+}
+
+.tickets-list .quantity{
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.places-list{
+    margin-top: 32px;
+    padding: 10px 20px;
+
+}
+.place-item{
+   float: left;
+   width: 33.333%;
+   
+   padding: 0 8px;
+   
+   
+}
+.place-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    background-color: aliceblue;
+    padding: 24px;
+}
+.place-heading{
+    font-size: 15px;
+    color: #000;
+    margin-top: 2px;
+}
+.place-buy-bnt{
+    color: antiquewhite;
+    background-color: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 18px;
+}
+
+#footer {
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container{
+    background: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100%-32px);
+    animation:  modalFadeIn ease 0.3s;
+}
+.modal-header{
+    background: cornflowerblue;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color:#fff;
+}
+.modal-ti-bag{
+    margin-right: 16px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: cornsilk;
+    padding: 12px;
+    cursor: pointer;
+}
+.modal-body{
+    padding: 16px;
+
+}
+.model-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: rgb(5, 4, 1) solid 1px;
+    width: 100%;
+    height: 10px;
+    padding: 15px;
+    margin-bottom: 24px;
+}
+#buy-tickets{
+    background: cornflowerblue;
+    color: cornsilk;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+}
+#buy-tickets:hover{
+    opacity: 0.8;
+}
+.modal-footer{
+    padding: 18px;
+    text-align: right;
+}
+.modal-footer a{
+    color: cornflowerblue;
+}
+.modal.open{
+    display: flex;
+}
+@keyframes modalFadeIn {
+    from{
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
